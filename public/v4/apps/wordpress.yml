@@ -12,7 +12,7 @@ services:
             MYSQL_PASSWORD: $$cap_db_pass
         caproverExtra:
             notExposeAsWebApp: 'true'
-    $$cap_appname-wordpress:
+    $$cap_appname:
         depends_on:
             - $$cap_appname-db
         image: wordpress:$$cap_wp_version
