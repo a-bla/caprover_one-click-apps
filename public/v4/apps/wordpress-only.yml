@@ -1,6 +1,6 @@
 captainVersion: 4
 services:
-    $$cap_appname-wordpress:
+    $$cap_appname:
         image: wordpress:$$cap_wp_version
         volumes:
             - $$cap_appname-wp-data:/var/www/html
