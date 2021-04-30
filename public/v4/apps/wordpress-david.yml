@@ -18,6 +18,8 @@ services:
         image: wordpress:$$cap_wp_version
         volumes:
             - $$cap_appname-wp-data:/var/www/html
+            - $$cap_appname-wp-etc:/etc
+            - $$cap_appname-wp-usr-local:/usr/local
         restart: always
         environment:
             WORDPRESS_DB_HOST: srv-captain--$$cap_appname-db:3306
